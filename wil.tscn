@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1hnbkw1ke2f6"]
+
+[ext_resource type="Script" uid="uid://drnkis633fcd6" path="res://Wil.cs" id="1_vj7mj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_73axo"]
+size = Vector2(88, 184)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_vj7mj"]
+
+[node name="Wil" type="CharacterBody2D"]
+script = ExtResource("1_vj7mj")
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+z_index = 1
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_73axo")
+
+[node name="texture" type="TextureRect" parent="."]
+z_index = -1
+offset_left = -43.0
+offset_top = -93.0
+offset_right = 43.0
+offset_bottom = 91.0
+texture = SubResource("CanvasTexture_vj7mj")

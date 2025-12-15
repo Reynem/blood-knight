@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bphaay4d7l6wb"]
+
+[ext_resource type="Script" uid="uid://qxi37reex58a" path="res://Core.cs" id="1_qhobl"]
+[ext_resource type="PackedScene" uid="uid://d1hnbkw1ke2f6" path="res://wil.tscn" id="2_tvpqx"]
+
+[node name="Core" type="Node2D"]
+script = ExtResource("1_qhobl")
+
+[node name="Wil" parent="." instance=ExtResource("2_tvpqx")]
+position = Vector2(0, -1)
