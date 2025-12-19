@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl65fxt6iegrj"]
+
+[ext_resource type="Script" uid="uid://wp10ghrb1481" path="res://Sword.cs" id="1_74bdg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8xsq"]
+size = Vector2(20, 12)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_74bdg"]
+specular_color = Color(0.5163172, 0.6825085, 0.91943634, 1)
+
+[node name="sword" type="AnimatableBody2D"]
+script = ExtResource("1_74bdg")
+
+[node name="hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -13)
+scale = Vector2(0.6158152, 2.8075802)
+shape = SubResource("RectangleShape2D_o8xsq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.7198894, 0.99999994, 0.7085844, 1)
+z_index = -1
+position = Vector2(0, -13)
+scale = Vector2(14.7681265, 36.554684)
+texture = SubResource("CanvasTexture_74bdg")

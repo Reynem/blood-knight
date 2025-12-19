@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://sb6chrux56ms"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlfo1"]
+size = Vector2(109, 38)
+
+[sub_resource type="Gradient" id="Gradient_kl2qe"]
+offsets = PackedFloat32Array(0, 0.22, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.12666667, 0.12666667, 0.12666667, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mw2ei"]
+gradient = SubResource("Gradient_kl2qe")
+fill_to = Vector2(0, 0.26635513)
+
+[node name="grass" type="StaticBody2D"]
+
+[node name="statiBox" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_mlfo1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -55.0
+offset_top = -19.0
+offset_right = 54.0
+offset_bottom = 19.0
+texture = SubResource("GradientTexture2D_mw2ei")
