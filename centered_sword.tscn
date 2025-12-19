@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://8q1ohx6fars1"]
+
+[ext_resource type="PackedScene" uid="uid://dl65fxt6iegrj" path="res://sword.tscn" id="1_a2djx"]
+[ext_resource type="Script" uid="uid://dtee028lhthh8" path="res://CenteredSword.cs" id="1_f7wqq"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_f7wqq")
+
+[node name="sword" parent="." instance=ExtResource("1_a2djx")]
+position = Vector2(-5, 0)

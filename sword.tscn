@@ -1,24 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dl65fxt6iegrj"]
+[gd_scene load_steps=3 format=3 uid="uid://dl65fxt6iegrj"]
 
-[ext_resource type="Script" uid="uid://wp10ghrb1481" path="res://Sword.cs" id="1_74bdg"]
+[sub_resource type="CanvasTexture" id="CanvasTexture_o8xsq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o8xsq"]
-size = Vector2(20, 12)
+size = Vector2(8.5, 37.75)
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_74bdg"]
-specular_color = Color(0.5163172, 0.6825085, 0.91943634, 1)
-
-[node name="sword" type="AnimatableBody2D"]
-script = ExtResource("1_74bdg")
-
-[node name="hitbox" type="CollisionShape2D" parent="."]
-position = Vector2(0, -13)
-scale = Vector2(0.6158152, 2.8075802)
-shape = SubResource("RectangleShape2D_o8xsq")
+[node name="sword" type="Area2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.7198894, 0.99999994, 0.7085844, 1)
-z_index = -1
-position = Vector2(0, -13)
-scale = Vector2(14.7681265, 36.554684)
-texture = SubResource("CanvasTexture_74bdg")
+modulate = Color(1, 0.5529412, 1, 1)
+position = Vector2(4.9999995, 8.077936e-28)
+scale = Vector2(10, 40)
+texture = SubResource("CanvasTexture_o8xsq")
+centered = false
+offset = Vector2(-0.49999997, 3.576279e-08)
+
+[node name="hitbox" type="CollisionShape2D" parent="."]
+z_index = 14
+position = Vector2(5, 20.125)
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("RectangleShape2D_o8xsq")

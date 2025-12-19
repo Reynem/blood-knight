@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d1hnbkw1ke2f6"]
 
 [ext_resource type="Script" uid="uid://drnkis633fcd6" path="res://Wil.cs" id="1_vj7mj"]
-[ext_resource type="PackedScene" uid="uid://dl65fxt6iegrj" path="res://sword.tscn" id="2_naxf1"]
+[ext_resource type="PackedScene" uid="uid://8q1ohx6fars1" path="res://centered_sword.tscn" id="2_naxf1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_73axo"]
 size = Vector2(88, 184)
@@ -28,7 +28,7 @@ texture = SubResource("CanvasTexture_vj7mj")
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -2)
 
-[node name="sword" parent="." instance=ExtResource("2_naxf1")]
-position = Vector2(51, 4)
-rotation = 0.48514244
-scale = Vector2(1.3724976, 1.9984478)
+[node name="Node2D" parent="." instance=ExtResource("2_naxf1")]
+z_index = -10
+position = Vector2(42.999996, -22.999996)
+rotation = -0.6066638
